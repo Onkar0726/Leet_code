@@ -1,0 +1,24 @@
+import java.util.Arrays;
+public class plusOne {
+        public int[] plusOne(int[] digits) {
+            int n=digits.length;
+            for(int i=1;i<=n;i++){
+                if(digits[n-i]==9){
+                    digits[n-i]=0;
+                }
+                else {
+                    digits[n-i] = digits[n-i] + 1;
+                    return digits;
+                }
+            }
+            int newArray[] = new int[n + 1];
+            newArray[0] = 1;
+            return newArray;
+        }
+    public static void main(String[] args) {
+        plusOne obj = new plusOne ();
+        int digits[] = {1,3,4,5};
+        int result[] = obj.plusOne(digits);
+        System.out.println(Arrays.toString(result));
+    }
+    }
