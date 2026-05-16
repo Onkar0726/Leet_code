@@ -38,4 +38,5 @@ public class median_two_sorted_array {
 
         System.out.println(result);
     }
+
 }
