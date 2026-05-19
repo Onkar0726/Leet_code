@@ -41,6 +41,7 @@ public class firstLastPositionOfElementOfSortedArray {
         int[] nums = {2, 2};
         int target = 2;
         int[] result = s.searchRange(nums, target);
+        int a;
         System.out.println(Arrays.toString(result));
     }
 }
