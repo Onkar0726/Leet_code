@@ -9,9 +9,9 @@ public class MoveZeroes {
                     temp=nums[i];
                     nums[i]=nums[j];
                     nums[j]=temp;
-                    i++;
+                    i++;//to check further
                 }
-                j++;
+                j++;//loop increment
 
             }
             System.out.println(Arrays.toString(nums));
